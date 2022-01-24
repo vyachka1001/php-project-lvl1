@@ -1,0 +1,12 @@
+{
+    "name": "hexlet/code",
+    "description": "brain-games project",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Viachaslau Viarbitski",
+            "email": "viachaslauviarbitski@gmail.com"
+        }
+    ],
+    "require": {}
+}
