@@ -10,8 +10,10 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-use function Brain\Games\Cli\greetUser;
+use function Brain\Games\Cli\getUserName;
 use function Brain\Games\Src\Output\Controller\writeCondition;
+use function Src\Impl\BrainEven\play;
 
-greetUser();
+$name = getUserName();
 writeCondition('even');
+play($name);
