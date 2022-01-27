@@ -1,6 +1,6 @@
 <?php
 
-namespace Brain\Games\Output\Controller;
+namespace Brain\Games\Src\Output\Controller;
 
 use function cli\line;
 

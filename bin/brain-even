@@ -11,7 +11,8 @@ if (file_exists($autoloadPath1)) {
 }
 
 use function Brain\Games\Cli\greetUser;
-use function Brain\Games\Output\Controller\writeCondition;
+use function Brain\Games\Src\Output\Controller\writeCondition;
+use function Brain\Games\Src\Output\Controller\writeQuestion;
 
 greetUser();
 writeCondition('even');
