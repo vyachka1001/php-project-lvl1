@@ -21,7 +21,10 @@
             "src/Cli.php", 
             "src/output/Controller.php", 
             "src/impl/BrainEven.php",
-            "src/impl/generators/RandomInt.php"]
+            "src/impl/generators/RandomInt.php",
+            "src/impl/Controller.php",
+            "src/Engine.php"
+        ]
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.6"
