@@ -25,6 +25,5 @@ Games examples:
     brain-calc: [![asciicast](https://asciinema.org/a/ydV6Gq3wLY9r5nQJL8HiOTs8q.svg)](https://asciinema.org/a/ydV6Gq3wLY9r5nQJL8HiOTs8q)
     brain-gcd:  [![asciicast](https://asciinema.org/a/7iiUQgfQd0h7che3qERvfyk1E.svg)](https://asciinema.org/a/7iiUQgfQd0h7che3qERvfyk1E)
     brain-progression: [![asciicast](https://asciinema.org/a/8GgAjCgiA6obeHvV6wp51vLkC.svg)](https://asciinema.org/a/8GgAjCgiA6obeHvV6wp51vLkC)
-	brain-prime: [![asciicast](https://asciinema.org/a/K9ChaZJKQUpU3iOHDdtu1Itsy.svg)](https://asciinema.org/a/K9ChaZJKQUpU3iOHDdtu1Itsy)
 
 Project demo [![asciicast](https://asciinema.org/a/cjMUvP3BzA6Mdydun5ux59CcC.svg)](https://asciinema.org/a/cjMUvP3BzA6Mdydun5ux59CcC)
