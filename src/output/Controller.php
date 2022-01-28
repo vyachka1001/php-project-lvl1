@@ -8,6 +8,7 @@ use function cli\prompt;
 const EVEN_GAME_CONDITION = 'Answer "yes" if the number is even, otherwise answer "no".';
 const CALC_GAME_CONDITION = 'What is the result of the expression?';
 const GCD_GAME_CONDITION = 'Find the greatest common divisor of given numbers.';
+const PROGRESSION_GAME_CONDITION = 'What number is missing in the progression?';
 const QUESTION_STR = "Question: ";
 const ANSWER_STR = "Your answer";
 const CORRECT_ANSWER_OUTPUT = 'Correct!';
@@ -25,6 +26,9 @@ function writeCondition($game)
             break;
         case 'gcd':
             line(GCD_GAME_CONDITION);
+            break;
+        case 'progression':
+            line(PROGRESSION_GAME_CONDITION);
             break;
     }
 }
