@@ -28,7 +28,7 @@ function isPrime(int $number)
     return true;
 }
 
-function countAnswer($expression): string
+function countAnswer(string $expression): string
 {
     return isPrime((int)$expression) ? 'yes' : 'no';
 }
