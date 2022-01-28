@@ -26,17 +26,17 @@ function generate(): string
     return implode(' ', $progression);
 }
 
-function countAnswer($expression): string
+function countAnswer(string $expression): string
 {
     $progression = explode(' ', $expression);
-    $firstEl = $progression[0];
+    $firstEl = (int)$progression[0];
     $diff = 0;
     $passIndex = 0;
     $index = 1;
 
     while ($diff === 0 || $passIndex === 0) {
         if ($progression[$index] !== PASS_MARKER && $progression[$index - 1] !== PASS_MARKER) {
-            $diff = $progression[$index] - $progression[$index - 1];
+            $diff = (int)$progression[$index] - (int)$progression[$index - 1];
         }
 
         if ($progression[$index] === PASS_MARKER) {
