@@ -6,6 +6,8 @@ use function Src\Impl\Games\BrainEven\generate as generateEven;
 use function Src\Impl\Games\BrainCalc\generate as generateCalc;
 use function Src\Impl\Games\BrainGcd\generate as generateGcd;
 use function Src\Impl\Games\BrainProgression\generate as generateProgression;
+use function Src\Impl\Games\BrainPrime\generate as generatePrime;
+use function Src\Impl\Games\BrainPrime\countAnswer as countPrime;
 use function Src\Impl\Games\BrainProgression\countAnswer as countProgression;
 use function Src\Impl\Games\BrainEven\countAnswer as countEven;
 use function Src\Impl\Games\BrainCalc\countAnswer as countCalc;
@@ -22,6 +24,8 @@ function countAnswer($expression, $game)
             return countGcd($expression);
         case 'progression':
             return countProgression($expression);
+        case 'prime':
+            return countPrime($expression);
     }
 }
 
@@ -36,5 +40,7 @@ function generateExpression($game)
             return generateGcd();
         case 'progression':
             return generateProgression();
+        case 'prime':
+            return generatePrime();
     }
 }
