@@ -14,19 +14,25 @@ function generate(): string
     return "{$operandOne} {$sign} {$operandTwo}";
 }
 
-function countAnswer($expression): string
+function countAnswer(string $expression): string
 {
     $values = explode(' ', $expression);
     $signIndex = 1;
-    $operandOne = $values[0];
-    $operandTwo = $values[2];
+    $operandOne = (int)$values[0];
+    $operandTwo = (int)$values[2];
+    $result = 0;
 
     switch ($values[$signIndex]) {
         case '+':
-            return $operandOne + $operandTwo;
+            $result = $operandOne + $operandTwo;
+            break;
         case '-':
-            return $operandOne - $operandTwo;
+            $result = $operandOne - $operandTwo;
+            break;
         case '*':
-            return $operandOne * $operandTwo;
+            $result = $operandOne - $operandTwo;
+            break;
     }
+
+    return (string)$result;
 }
