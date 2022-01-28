@@ -9,7 +9,7 @@ function generate(): int
     return getRandomInt();
 }
 
-function countAnswer(int $expression)
+function countAnswer(string $expression)
 {
-    return ($expression % 2 === 0) ? 'yes' : 'no';
+    return ((int)$expression % 2 === 0) ? 'yes' : 'no';
 }
