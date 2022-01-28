@@ -25,9 +25,9 @@ function gcd(int $operandOne, int $operandTwo)
     return $operandOne + $operandTwo;
 }
 
-function countAnswer($expression): string
+function countAnswer(string $expression): string
 {
     $values = explode(' ', $expression);
     [$operandOne, $operandTwo] = $values;
-    return gcd($operandOne, $operandTwo);
+    return gcd((int)$operandOne, (int)$operandTwo);
 }
