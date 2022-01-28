@@ -13,7 +13,7 @@ use function Src\Impl\Games\BrainEven\countAnswer as countEven;
 use function Src\Impl\Games\BrainCalc\countAnswer as countCalc;
 use function Src\Impl\Games\BrainGcd\countAnswer as countGcd;
 
-function countAnswer($expression, $game)
+function countAnswer(string $expression, string $game)
 {
     switch ($game) {
         case 'even':
@@ -29,7 +29,7 @@ function countAnswer($expression, $game)
     }
 }
 
-function generateExpression($game)
+function generateExpression(string $game)
 {
     switch ($game) {
         case 'even':
