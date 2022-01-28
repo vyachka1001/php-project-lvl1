@@ -9,6 +9,7 @@ const EVEN_GAME_CONDITION = 'Answer "yes" if the number is even, otherwise answe
 const CALC_GAME_CONDITION = 'What is the result of the expression?';
 const GCD_GAME_CONDITION = 'Find the greatest common divisor of given numbers.';
 const PROGRESSION_GAME_CONDITION = 'What number is missing in the progression?';
+const PRIME_GAME_CONDITION = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const QUESTION_STR = "Question: ";
 const ANSWER_STR = "Your answer";
 const CORRECT_ANSWER_OUTPUT = 'Correct!';
@@ -29,6 +30,9 @@ function writeCondition($game)
             break;
         case 'progression':
             line(PROGRESSION_GAME_CONDITION);
+            break;
+        case 'prime':
+            line(PRIME_GAME_CONDITION);
             break;
     }
 }
