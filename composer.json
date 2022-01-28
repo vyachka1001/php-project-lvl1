@@ -24,6 +24,7 @@
             "src/impl/Games/BrainEven.php",
             "src/impl/Games/BrainCalc.php",
             "src/impl/Games/BrainGcd.php",
+            "src/impl/Games/BrainProgression.php",
             "src/impl/generators/RandomInt.php",
             "src/impl/Controller.php",
             "src/Engine.php"
