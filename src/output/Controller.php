@@ -16,7 +16,7 @@ const CORRECT_ANSWER_OUTPUT = 'Correct!';
 const VICTORY_END_STR = "Congratulations, ";
 const DEFEAT_END_STR = "Let's try again, ";
 
-function writeCondition($game)
+function writeCondition(string $game)
 {
     switch ($game) {
         case 'even':
@@ -37,7 +37,7 @@ function writeCondition($game)
     }
 }
 
-function writeQuestion($question)
+function writeQuestion(string $question)
 {
     line(QUESTION_STR . $question);
 }
@@ -48,7 +48,7 @@ function getAnswer(): string
     return $answer;
 }
 
-function writeAnswer($isCorrect, $correctAnswer = '', $userAnswer = '')
+function writeAnswer(bool $isCorrect, string $correctAnswer = '', string $userAnswer = '')
 {
     if ($isCorrect) {
         line(CORRECT_ANSWER_OUTPUT);
@@ -57,7 +57,7 @@ function writeAnswer($isCorrect, $correctAnswer = '', $userAnswer = '')
     }
 }
 
-function endGame($isVictory, $name)
+function endGame(bool $isVictory, string $name)
 {
     if ($isVictory) {
         line(VICTORY_END_STR . $name . "!");
