@@ -9,7 +9,7 @@ function generate(): string
     return getRandomInt();
 }
 
-function isPrime($number)
+function isPrime(int $number)
 {
     if ($number === 2) {
         return true;
@@ -30,5 +30,5 @@ function isPrime($number)
 
 function countAnswer($expression): string
 {
-    return isPrime($expression) ? 'yes' : 'no';
+    return isPrime((int)$expression) ? 'yes' : 'no';
 }
