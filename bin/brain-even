@@ -12,8 +12,9 @@ if (file_exists($autoloadPath1)) {
 
 use function Brain\Games\Cli\getUserName;
 use function Brain\Games\Src\Output\Controller\writeCondition;
-use function Src\Impl\BrainEven\play;
+use function Src\Engine\play;
 
+$game = 'even';
 $name = getUserName();
-writeCondition('even');
-play($name);
+writeCondition($game);
+play($name, $game);
