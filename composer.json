@@ -13,7 +13,8 @@
     },
     "bin": [
         "bin/brain-games",
-        "bin/brain-even"
+        "bin/brain-even",
+        "bin/brain-calc"
     ],
     "license": "MIT",
     "autoload": {
@@ -21,6 +22,7 @@
             "src/Cli.php", 
             "src/output/Controller.php", 
             "src/impl/BrainEven.php",
+            "src/implBrainCalc.php",
             "src/impl/generators/RandomInt.php",
             "src/impl/Controller.php",
             "src/Engine.php"
