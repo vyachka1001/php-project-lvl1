@@ -22,7 +22,7 @@
             "src/Cli.php", 
             "src/output/Controller.php", 
             "src/impl/BrainEven.php",
-            "src/implBrainCalc.php",
+            "src/impl/BrainCalc.php",
             "src/impl/generators/RandomInt.php",
             "src/impl/Controller.php",
             "src/Engine.php"
