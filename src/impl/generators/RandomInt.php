@@ -5,7 +5,7 @@ namespace Src\Impl\Generators;
 const RAND_INT_MIN = 1;
 const RAND_INT_MAX = 100;
 
-function getRandomInt()
+function getRandomInt($min = RAND_INT_MIN, $max = RAND_INT_MAX)
 {
-    return random_int(RAND_INT_MIN, RAND_INT_MAX);
+    return random_int($min, $max);
 }
