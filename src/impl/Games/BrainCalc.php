@@ -30,7 +30,7 @@ function countAnswer(string $expression): string
             $result = $operandOne - $operandTwo;
             break;
         case '*':
-            $result = $operandOne - $operandTwo;
+            $result = $operandOne * $operandTwo;
             break;
     }
 
