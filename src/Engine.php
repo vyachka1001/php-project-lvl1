@@ -9,7 +9,7 @@ use function Brain\Games\Src\Output\Controller\endGame;
 use function Src\Impl\Controller\countAnswer;
 use function Src\Impl\Controller\generateExpression;
 
-function playRound($game): bool
+function playRound(string $game): bool
 {
     $expression = generateExpression($game);
     writeQuestion($expression);
@@ -26,7 +26,7 @@ function playRound($game): bool
     }
 }
 
-function play($name, $game)
+function play(string $name, string $game)
 {
     for ($round = 0; $round < 3; $round++) {
         $roundResult = playRound($game);
