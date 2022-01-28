@@ -6,6 +6,7 @@ use function cli\line;
 use function cli\prompt;
 
 const EVEN_GAME_CONDITION = 'Answer "yes" if the number is even, otherwise answer "no".';
+const CALC_GAME_CONDITION = 'What is the result of the expression?';
 const QUESTION_STR = "Question: ";
 const ANSWER_STR = "Your answer";
 const CORRECT_ANSWER_OUTPUT = 'Correct!';
@@ -17,6 +18,10 @@ function writeCondition($game)
     switch ($game) {
         case 'even':
             line(EVEN_GAME_CONDITION);
+            break;
+        case 'calc':
+            line(CALC_GAME_CONDITION);
+            break;
     }
 }
 
