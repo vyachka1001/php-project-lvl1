@@ -1,6 +1,6 @@
 <?php
 
-namespace Src\Impl\BrainEven;
+namespace Src\Impl\Games\BrainEven;
 
 use function Src\Impl\Generators\getRandomInt;
 
