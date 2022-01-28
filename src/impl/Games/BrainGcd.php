@@ -14,8 +14,7 @@ function generate(): string
 
 function gcd(int $operandOne, int $operandTwo)
 {
-    while ($operandOne > 0 && $operandTwo > 0)
-    {
+    while ($operandOne > 0 && $operandTwo > 0) {
         if ($operandOne > $operandTwo) {
             $operandOne %= $operandTwo;
         } else {
